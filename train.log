@@ -1,0 +1,151 @@
+nohup: ignoring input
+fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-02-08 19:20:03,540 - mmdet3d - INFO - Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.9.23 (main, Jun  5 2025, 13:40:20) [GCC 11.2.0]
+CUDA available: True
+GPU 0: NVIDIA GeForce RTX 4090
+CUDA_HOME: /usr/local/cuda
+NVCC: Cuda compilation tools, release 12.8, V12.8.93
+GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.10.1+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.2.3 (Git Hash 7336ca9f055cf1bfa13efb658fe15dc9b41f0740)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.10.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, 
+
+TorchVision: 0.11.2+cu113
+OpenCV: 4.12.0
+MMCV: 1.6.0
+MMCV Compiler: GCC 9.3
+MMCV CUDA Compiler: 11.3
+MMDetection: 2.25.1
+MMSegmentation: 0.25.0
+MMDetection3D: 1.0.0rc4+
+spconv2.0: False
+------------------------------------------------------------
+
+2026-02-08 19:20:03,540 - mmdet3d - INFO - Building model from configs/sosdar_geometry.py...
+2026-02-08 19:20:03,555 - mmdet3d - INFO - Checking parameter gradients:
+2026-02-08 19:20:03,555 - mmdet3d - INFO - Trainable params: 134, Frozen params: 0
+fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-02-08 19:20:08,975 - mmdet - INFO - load checkpoint from local path: work_dirs/phase1_geometry/epoch_2.pth
+2026-02-08 19:20:08,994 - mmdet - INFO - resumed epoch 2, iter 7404
+2026-02-08 19:20:08,994 - mmdet - INFO - Start running, host: root@autodl-container-ajgk0b7384-73b1a644, work_dir: /root/autodl-tmp/FOD/Rail-BEV-SOTA/work_dirs/phase1_geometry
+2026-02-08 19:20:08,995 - mmdet - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(NORMAL      ) CheckpointHook                     
+(LOW         ) EvalHook                           
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) TensorboardLoggerHook              
+ -------------------- 
+before_train_epoch:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(LOW         ) IterTimerHook                      
+(LOW         ) EvalHook                           
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) TensorboardLoggerHook              
+ -------------------- 
+before_train_iter:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(LOW         ) IterTimerHook                      
+(LOW         ) EvalHook                           
+ -------------------- 
+after_train_iter:
+(ABOVE_NORMAL) OptimizerHook                      
+(NORMAL      ) CheckpointHook                     
+(LOW         ) IterTimerHook                      
+(LOW         ) EvalHook                           
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) TensorboardLoggerHook              
+ -------------------- 
+after_train_epoch:
+(NORMAL      ) CheckpointHook                     
+(LOW         ) EvalHook                           
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) TensorboardLoggerHook              
+ -------------------- 
+before_val_epoch:
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) TensorboardLoggerHook              
+ -------------------- 
+before_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_epoch:
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) TensorboardLoggerHook              
+ -------------------- 
+after_run:
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) TensorboardLoggerHook              
+ -------------------- 
+2026-02-08 19:20:08,995 - mmdet - INFO - workflow: [('train', 1)], max: 12 epochs
+2026-02-08 19:20:08,995 - mmdet - INFO - Checkpoints will be saved to /root/autodl-tmp/FOD/Rail-BEV-SOTA/work_dirs/phase1_geometry by HardDiskBackend.
+2026-02-08 19:20:37,398 - mmdet - INFO - Epoch [3][50/3702]	lr: 2.799e-03, eta: 5:49:20, time: 0.567, data_time: 0.076, memory: 32133, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 44.8300, loss: 44.8300, grad_norm: 114.6334
+2026-02-08 19:21:02,297 - mmdet - INFO - Epoch [3][100/3702]	lr: 2.799e-03, eta: 5:27:38, time: 0.498, data_time: 0.007, memory: 32134, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.8287, loss: 42.8287, grad_norm: 126.3509
+2026-02-08 19:21:27,193 - mmdet - INFO - Epoch [3][150/3702]	lr: 2.799e-03, eta: 5:20:07, time: 0.498, data_time: 0.007, memory: 32134, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 45.7313, loss: 45.7313, grad_norm: 134.8199
+2026-02-08 19:21:52,123 - mmdet - INFO - Epoch [3][200/3702]	lr: 2.799e-03, eta: 5:16:15, time: 0.499, data_time: 0.008, memory: 32134, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 40.8720, loss: 40.8720, grad_norm: 130.2852
+2026-02-08 19:22:17,026 - mmdet - INFO - Epoch [3][250/3702]	lr: 2.799e-03, eta: 5:13:42, time: 0.498, data_time: 0.007, memory: 32134, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 50.2275, loss: 50.2275, grad_norm: 165.3668
+2026-02-08 19:22:41,895 - mmdet - INFO - Epoch [3][300/3702]	lr: 2.799e-03, eta: 5:11:48, time: 0.497, data_time: 0.007, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.5777, loss: 42.5777, grad_norm: 129.7639
+2026-02-08 19:23:06,780 - mmdet - INFO - Epoch [3][350/3702]	lr: 2.799e-03, eta: 5:10:20, time: 0.498, data_time: 0.007, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.9771, loss: 42.9771, grad_norm: 128.6740
+2026-02-08 19:23:31,766 - mmdet - INFO - Epoch [3][400/3702]	lr: 2.799e-03, eta: 5:09:18, time: 0.500, data_time: 0.008, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.2726, loss: 43.2726, grad_norm: 135.4311
+2026-02-08 19:23:56,685 - mmdet - INFO - Epoch [3][450/3702]	lr: 2.799e-03, eta: 5:08:19, time: 0.498, data_time: 0.007, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.8033, loss: 42.8033, grad_norm: 116.2729
+2026-02-08 19:24:21,587 - mmdet - INFO - Epoch [3][500/3702]	lr: 2.799e-03, eta: 5:07:24, time: 0.498, data_time: 0.007, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 45.8215, loss: 45.8215, grad_norm: 134.4351
+2026-02-08 19:24:46,416 - mmdet - INFO - Epoch [3][550/3702]	lr: 2.799e-03, eta: 5:06:31, time: 0.497, data_time: 0.007, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.0041, loss: 43.0041, grad_norm: 145.5460
+2026-02-08 19:25:11,195 - mmdet - INFO - Epoch [3][600/3702]	lr: 2.799e-03, eta: 5:05:40, time: 0.496, data_time: 0.007, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 44.1403, loss: 44.1403, grad_norm: 122.8560
+2026-02-08 19:25:36,062 - mmdet - INFO - Epoch [3][650/3702]	lr: 2.799e-03, eta: 5:04:57, time: 0.497, data_time: 0.006, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.7380, loss: 43.7380, grad_norm: 133.0409
+2026-02-08 19:26:00,995 - mmdet - INFO - Epoch [3][700/3702]	lr: 2.799e-03, eta: 5:04:20, time: 0.499, data_time: 0.007, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.8531, loss: 41.8531, grad_norm: 110.7168
+2026-02-08 19:26:25,935 - mmdet - INFO - Epoch [3][750/3702]	lr: 2.799e-03, eta: 5:03:46, time: 0.499, data_time: 0.007, memory: 32135, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.4509, loss: 41.4509, grad_norm: 144.2143
+2026-02-08 19:26:50,844 - mmdet - INFO - Epoch [3][800/3702]	lr: 2.799e-03, eta: 5:03:11, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.5074, loss: 41.5074, grad_norm: 148.1762
+2026-02-08 19:27:15,793 - mmdet - INFO - Epoch [3][850/3702]	lr: 2.799e-03, eta: 5:02:39, time: 0.499, data_time: 0.008, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.6819, loss: 43.6819, grad_norm: 138.5206
+2026-02-08 19:27:40,726 - mmdet - INFO - Epoch [3][900/3702]	lr: 2.799e-03, eta: 5:02:07, time: 0.499, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 47.3586, loss: 47.3586, grad_norm: 143.2198
+2026-02-08 19:28:05,640 - mmdet - INFO - Epoch [3][950/3702]	lr: 2.799e-03, eta: 5:01:35, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.8629, loss: 43.8629, grad_norm: 122.3719
+2026-02-08 19:28:30,549 - mmdet - INFO - Epoch [3][1000/3702]	lr: 2.799e-03, eta: 5:01:03, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.9235, loss: 43.9235, grad_norm: 160.8086
+2026-02-08 19:28:55,473 - mmdet - INFO - Epoch [3][1050/3702]	lr: 2.799e-03, eta: 5:00:33, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.4792, loss: 41.4792, grad_norm: 147.3713
+2026-02-08 19:29:20,364 - mmdet - INFO - Epoch [3][1100/3702]	lr: 2.799e-03, eta: 5:00:02, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 45.4261, loss: 45.4261, grad_norm: 151.8298
+2026-02-08 19:29:45,266 - mmdet - INFO - Epoch [3][1150/3702]	lr: 2.799e-03, eta: 4:59:32, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 45.0770, loss: 45.0770, grad_norm: 128.3019
+2026-02-08 19:30:10,173 - mmdet - INFO - Epoch [3][1200/3702]	lr: 2.799e-03, eta: 4:59:03, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.4840, loss: 42.4840, grad_norm: 134.7472
+2026-02-08 19:30:35,075 - mmdet - INFO - Epoch [3][1250/3702]	lr: 2.799e-03, eta: 4:58:34, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 44.2308, loss: 44.2308, grad_norm: 164.4676
+2026-02-08 19:30:59,954 - mmdet - INFO - Epoch [3][1300/3702]	lr: 2.799e-03, eta: 4:58:04, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.6326, loss: 41.6326, grad_norm: 127.9018
+2026-02-08 19:31:24,822 - mmdet - INFO - Epoch [3][1350/3702]	lr: 2.799e-03, eta: 4:57:35, time: 0.497, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.9478, loss: 41.9478, grad_norm: 120.1994
+2026-02-08 19:31:49,777 - mmdet - INFO - Epoch [3][1400/3702]	lr: 2.799e-03, eta: 4:57:08, time: 0.499, data_time: 0.008, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.4772, loss: 42.4772, grad_norm: 133.5503
+2026-02-08 19:32:14,668 - mmdet - INFO - Epoch [3][1450/3702]	lr: 2.799e-03, eta: 4:56:40, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 39.3846, loss: 39.3846, grad_norm: 125.7669
+2026-02-08 19:32:39,583 - mmdet - INFO - Epoch [3][1500/3702]	lr: 2.799e-03, eta: 4:56:12, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 47.0493, loss: 47.0493, grad_norm: 147.5773
+2026-02-08 19:33:04,361 - mmdet - INFO - Epoch [3][1550/3702]	lr: 2.799e-03, eta: 4:55:42, time: 0.496, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.2941, loss: 41.2941, grad_norm: 137.9621
+2026-02-08 19:33:29,102 - mmdet - INFO - Epoch [3][1600/3702]	lr: 2.799e-03, eta: 4:55:11, time: 0.495, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 45.8747, loss: 45.8747, grad_norm: 161.1189
+2026-02-08 19:33:54,007 - mmdet - INFO - Epoch [3][1650/3702]	lr: 2.799e-03, eta: 4:54:43, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 40.4453, loss: 40.4453, grad_norm: 145.7655
+2026-02-08 19:34:18,909 - mmdet - INFO - Epoch [3][1700/3702]	lr: 2.799e-03, eta: 4:54:16, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 40.8314, loss: 40.8314, grad_norm: 148.5203
+2026-02-08 19:34:43,821 - mmdet - INFO - Epoch [3][1750/3702]	lr: 2.799e-03, eta: 4:53:50, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 46.3863, loss: 46.3863, grad_norm: 153.0647
+2026-02-08 19:35:08,720 - mmdet - INFO - Epoch [3][1800/3702]	lr: 2.799e-03, eta: 4:53:23, time: 0.498, data_time: 0.008, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.7039, loss: 42.7039, grad_norm: 127.2700
+2026-02-08 19:35:33,614 - mmdet - INFO - Epoch [3][1850/3702]	lr: 2.799e-03, eta: 4:52:56, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.3384, loss: 43.3384, grad_norm: 151.4801
+2026-02-08 19:35:58,481 - mmdet - INFO - Epoch [3][1900/3702]	lr: 2.799e-03, eta: 4:52:29, time: 0.497, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.1117, loss: 42.1117, grad_norm: 156.2421
+2026-02-08 19:36:23,381 - mmdet - INFO - Epoch [3][1950/3702]	lr: 2.799e-03, eta: 4:52:02, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 44.0836, loss: 44.0836, grad_norm: 150.4246
+2026-02-08 19:36:48,247 - mmdet - INFO - Epoch [3][2000/3702]	lr: 2.799e-03, eta: 4:51:35, time: 0.497, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.9879, loss: 41.9879, grad_norm: 165.0161
+2026-02-08 19:37:13,113 - mmdet - INFO - Epoch [3][2050/3702]	lr: 2.799e-03, eta: 4:51:08, time: 0.497, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.0939, loss: 43.0939, grad_norm: 149.9601
+2026-02-08 19:37:37,997 - mmdet - INFO - Epoch [3][2100/3702]	lr: 2.799e-03, eta: 4:50:42, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.8881, loss: 41.8881, grad_norm: 167.4825
+2026-02-08 19:38:02,884 - mmdet - INFO - Epoch [3][2150/3702]	lr: 2.799e-03, eta: 4:50:15, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.9353, loss: 42.9353, grad_norm: 142.9189
+2026-02-08 19:38:27,761 - mmdet - INFO - Epoch [3][2200/3702]	lr: 2.799e-03, eta: 4:49:49, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 43.9409, loss: 43.9409, grad_norm: 152.9950
+2026-02-08 19:38:52,624 - mmdet - INFO - Epoch [3][2250/3702]	lr: 2.799e-03, eta: 4:49:22, time: 0.497, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 41.3269, loss: 41.3269, grad_norm: 111.3142
+2026-02-08 19:39:17,502 - mmdet - INFO - Epoch [3][2300/3702]	lr: 2.799e-03, eta: 4:48:56, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 38.4876, loss: 38.4876, grad_norm: 159.1956
+2026-02-08 19:39:42,375 - mmdet - INFO - Epoch [3][2350/3702]	lr: 2.799e-03, eta: 4:48:30, time: 0.497, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 40.1598, loss: 40.1598, grad_norm: 194.5063
+2026-02-08 19:40:07,268 - mmdet - INFO - Epoch [3][2400/3702]	lr: 2.799e-03, eta: 4:48:04, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 44.0163, loss: 44.0163, grad_norm: 151.5849
+2026-02-08 19:40:32,147 - mmdet - INFO - Epoch [3][2450/3702]	lr: 2.799e-03, eta: 4:47:38, time: 0.498, data_time: 0.007, memory: 32137, loss_heatmap: 0.0000, loss_bbox: 0.0000, loss_poly: 42.8627, loss: 42.8627, grad_norm: 162.3374
